@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rjsa210/Readme-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rjsa210/Readme-generator/issues"
+  },
+  "homepage": "https://github.com/Rjsa210/Readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
