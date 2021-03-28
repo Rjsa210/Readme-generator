@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generators = require('./utils/generateReadme');
 
-const questions = [
+const userPrompts = [
   // What is your project tit
   {
     type: 'input',
@@ -74,7 +74,7 @@ const questions = [
 ];
 
 const init = () => {
-  inquirer.prompt(questions)
+  inquirer.prompt(userPrompts)
     .then((response) => {
       try {
         const readme = generators.genReadme(response);
