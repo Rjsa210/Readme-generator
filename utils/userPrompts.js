@@ -1,9 +1,5 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
-const generators = require('./utils/generateReadme');
-
-const questions = [
-  // What is your project tit
+module.export = [
+  // What is your project title
   {
     type: 'input',
     name: 'projectname',
@@ -72,39 +68,3 @@ const questions = [
     message: 'What is your E-mail address?'
   },
 ];
-
-const init = () => {
-  inquirer.prompt(questions)
-    .then((response) => {
-      try {
-        const readme = generators.genReadme(response);
-        fs.writeFileSync(`${response.projectname}_readme.md`, readme);
-        console.log('readme successfully created');
-      } catch (error) {
-        console.log(error);
-      }
-    });
-};
-
-init();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
